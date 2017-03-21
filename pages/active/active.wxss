@@ -1,0 +1,10 @@
+@import "../../views/home/home.wxss";
+@import "../../views/sort/sort.wxss";
+@import "../../views/cart/cart.wxss";
+@import "../../views/mine/mine.wxss";
+
+.toolbar { display: flex; height : 100rpx; border-top: solid 1px #eee; position: fixed; bottom : 0; width : 100%; background-color: #fff; }
+.toolbar .tab { flex-grow : 1; text-align: center; font-size : 24rpx; color : #888; position: relative; }
+.toolbar .tab .icon { display: block; margin : 0 auto; margin-top: 10rpx; }
+.toolbar .tab.current { color : #f5692e; }
+.toolbar .tab .num { background-color: #eb2243; color : #fff; width : 36rpx; height : 36rpx; border-radius : 50%; text-align: center; line-height: 36rpx; font-size : 20rpx; position: absolute; left : 50%; margin-left : 10rpx; top : 5rpx; }

@@ -1,0 +1,121 @@
+<!-- 轮播图模块 -->
+<template name="slider">
+	<view class="slider">
+		<swiper autoplay data-moduleindex="{{index}}" bindchange="modulesSliderChange">
+			<swiper-item wx:for="{{data}}" >
+				<navigator url="{{item.link}}">
+					<image src="{{item.img}}"></image>
+				</navigator>
+			</swiper-item>
+		</swiper>
+		<view class="pagination">
+			<block wx:for="{{data}}">
+				<view wx:if="{{item.selected}}" class="current"></view>
+				<view wx:else></view>
+			</block>
+		</view>
+	</view>
+</template>
+
+<!-- 入口模块 -->
+<template name="entry">
+	<view class="entry">
+		<view wx:for="{{data}}">
+			<navigator url="{{item.link}}">
+				<image src="{{item.img}}"></image>
+				{{item.text}}
+			</navigator>
+		</view>
+	</view>
+</template>
+
+<!-- 商品列表 -->
+<template name="module-1">
+	<view class="module-1 flex-col">
+		<view class="item-wrapper col" wx:for="{{data}}">
+			<view class="item">
+				<navigator url="{{item.link}}">
+					<image class="image" src="{{item.img}}"></image>
+					<text class="title">{{item.title}}</text>
+					<view class="price">
+						<view class="last">¥{{item.originPrice}}<view></view></view>
+						<view class="current">¥{{item.price}}</view>
+					</view>
+					<view catchtap="modulesAddCart" data-sku-id="{{item.skuId}}" data-store-id="{{item.storeId}}" class="icon add-cart">
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</view>		
+</template>
+
+<!-- 左右楼层混搭 -->
+<template name="module-2">
+	<view class="module-2 flex-col">
+		<view class="col">
+			<navigator url="{{data[0].link}}">
+				<image src="{{data[0].img}}"></image>
+			</navigator>
+		</view>
+		<view class="col">
+			<view class="row">
+				<navigator url="{{data[1].link}}">
+					<image src="{{data[1].img}}"></image>
+				</navigator>
+			</view>
+			<view class="row flex-col">
+				<view class="col">
+					<navigator url="{{data[2].link}}">
+						<image src="{{data[2].img}}"></image>
+					</navigator>
+				</view>
+				<view class="col">
+					<navigator url="{{data[3].link}}">
+						<image src="{{data[3].img}}"></image>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view>		
+</template>
+
+<!-- 并排图片 -->
+<template name="module-3">
+	<view class="module-3 flex-col" style="height:{{data[0].height/data[0].width*750/data.length}}rpx;">
+		<view class="col" wx:for="{{data}}">
+			<navigator url="{{item.link}}" wx:if="{{item.link}}">
+				<image src="{{item.img}}" style="width:{{750/data.length}}rpx;height:{{item.height/item.width*750/data.length}}rpx;"></image>
+			</navigator>
+			<image wx:else src="{{item.img}}" style="width:{{750/data.length}}rpx;height:{{item.height/item.width*750/data.length}}rpx;"></image>
+		</view>
+	</view>	
+</template>
+
+
+<!--
+<view class="module-4 flex-col">
+	<view class="col">
+		<navigator>
+			<image src="http://img.dmall.com/mIndex/201612/3405594d-e5bf-41c6-b997-39cdd419c331_480x480H"></image>
+		</navigator>
+	</view>
+	<view class="col">
+		<navigator>
+			<image src="http://img.dmall.com/mIndex/201612/3405594d-e5bf-41c6-b997-39cdd419c331_480x480H"></image>
+		</navigator>
+	</view>
+	<view class="col">
+		<navigator>
+			<image src="http://img.dmall.com/mIndex/201612/3405594d-e5bf-41c6-b997-39cdd419c331_480x480H"></image>
+		</navigator>
+	</view>
+	<view class="col">
+		<navigator>
+			<image src="http://img.dmall.com/mIndex/201612/3405594d-e5bf-41c6-b997-39cdd419c331_480x480H"></image>
+		</navigator>
+	</view>
+</view>	
+
+<view class="banner">
+	<image src="http://img.dmall.com/mIndex/201612/4b8df615-62db-48d0-af87-d7de52c75262_750H"></image>
+</view>-->

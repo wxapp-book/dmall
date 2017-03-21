@@ -1,0 +1,60 @@
+.base-style .icon {
+	background-image: url(https://static.dmall.com/kayak-project/kayak-lib/dist/kayak-lib/globalstyle/sprt.png);
+    background-repeat: no-repeat;
+    background-size: 800rpx auto;
+    width: 60rpx;
+    height: 60rpx;
+    display: inline-block;
+}
+
+.base-style .icon.bar {
+    background-image: url(http://static.dmall.com/kayak-project/wxdmall/dist/wxdmall/common/image/btm-bar-sprt.png);
+    background-size: 500rpx auto;	
+}
+
+ /* 图标 */
+.base-style .icon.bar.home { background-position: 0 0; }
+.base-style .icon.bar.home.current { background-position: 0 -100rpx; }
+.base-style .icon.bar.sort { background-position : -100rpx 0; }
+.base-style .icon.bar.sort.current { background-position: -100rpx -100rpx; }
+.base-style .icon.bar.cart { background-position: -300rpx 0; }
+.base-style .icon.bar.cart.current { background-position: -300rpx -100rpx; }
+.base-style .icon.bar.mine { background-position : -400rpx 0; }
+.base-style .icon.bar.mine.current { background-position: -400rpx -100rpx; }
+
+
+.base-style .icon.cart { background-position: -215rpx -510rpx; }
+.base-style .icon.search { background-position : 0 -100rpx; }
+.base-style .icon.add-cart { background-position: -300rpx -300rpx; }
+.base-style .icon.checkbox { background-position :-500rpx -300rpx;}
+.base-style .icon.checkbox.checked { background-position : -400rpx -300rpx; }
+.base-style .icon.plus { background-position : -300rpx -300rpx; }
+.base-style .icon.minus { background-position : 0 -800rpx; }
+.base-style .icon.vip { background-position: -576rpx -960rpx; width: 116rpx; height: 30rpx; }
+.base-style .icon.orders { background-position: -200rpx -100rpx; }
+.base-style .icon.group-buying { background-position: -500rpx -100rpx; }
+.base-style .icon.scan { background-position: -600rpx -102rpx; }
+.base-style .icon.member { background-position: -400rpx -940rpx; }
+.base-style .icon.location { background-position: -300rpx -100rpx; }
+.base-style .icon.help { background-position: 0 -200rpx; }
+.base-style .icon.download { background-position: -600rpx -800rpx; }
+.base-style .icon.service { background-position: -100rpx -200rpx; }
+.base-style .icon.onlinepayment { background-position : -400rpx -200rpx; }
+.base-style .icon.offlinepayment { background-position : -100rpx -940rpx }
+.base-style .icon.weixinpay { background-position: -400rpx -200rpx; }
+.base-style .icon.alipay { background-position: -500rpx -880rpx; }
+
+/* 轮播图 */
+.slider { height : 300rpx; position: relative; background-color: #efefef; }
+.slider swiper { height : 100%; }
+.slider swiper navigator,
+.slider swiper image { width : 100%; height : 100%; }
+.slider .pagination { position: absolute; bottom : 10rpx; width : 100%; height : 20rpx; display: flex; align-content : center; justify-content:center; }
+.slider .pagination view { width: 14rpx; height : 14rpx; border-radius: 7rpx; background-color: #ccc; margin : 0 10rpx; }
+.slider .pagination view.current { background-color: #f5692e; }
+
+.flex-col { display: flex; }
+.flex-col .col { flex-grow : 1;  }
+
+
+.navigator-hover { background-color: transparent; }

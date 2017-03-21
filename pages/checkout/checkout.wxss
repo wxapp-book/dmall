@@ -1,0 +1,26 @@
+.checkout { background-color: #f9f9f9; font-size : 28rpx; padding-bottom : 80rpx; }
+
+.checkout .address { border-bottom : solid 1px #eee; color : #404040; padding : 20rpx 50rpx 20rpx 20rpx; position: relative; background: url(http://static.dmall.com/kayak-project/cart/dist/cart/common/image/shoppingline.png) repeat-x 0 0 #fff; background-size: auto 4rpx; }
+.checkout .address .user { font-size : 32rpx; display: block; }
+.checkout .address .location { margin-top: 10rpx; font-size : 24rpx; display: block; color : gray; }
+
+.checkout .module { margin-top : 20rpx; border-top: solid 1px #eee; background-color: #fff; }
+.checkout .module .row { border-bottom : solid 1px #eee; padding : 10rpx 20rpx; height : 60rpx; line-height : 60rpx; position: relative; }
+.checkout .module .cont { padding : 10rpx 0; border-bottom : solid 1px #eee; }
+.checkout .module .cont .sub-row { color : gray; font-size : 24rpx; padding : 10rpx 20rpx; }
+.checkout .module .cont .sub-row view { float : right; }
+
+.checkout .shipment .sub-info { float : right; }
+
+.checkout .payment .icon { float : left; margin-right : 10rpx; }
+.checkout .payment .icon.checkbox { float : right; margin-right : 0; }
+
+.checkout .remarks input { float : right; width : 630rpx; height : 60rpx; line-height : 60rpx; }
+
+.checkout .orderinfo .total view { float : right; color : #f5692e; }
+
+.checkout .toolbar { border-top : solid 1px #eee; height : 80rpx; color : #f5692e; line-height : 80rpx; padding-left : 20rpx; background-color: #fff; position: fixed; bottom : 0; left : 0; width : 730rpx; overflow: hidden; }
+.checkout .toolbar view { display : inline-block; }
+.checkout .toolbar .strong { font-weight : bold; font-size : 36rpx; }
+.checkout .toolbar .sup { font-size : 24rpx; position: relative; top : -12rpx; margin-right : 10rpx; }
+.checkout .toolbar .button { float : right; padding : 0 40rpx; background-color: #ff712b; color : #fff; }

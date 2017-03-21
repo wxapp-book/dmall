@@ -1,0 +1,9 @@
+<template name="search-box">
+	<view class="search-box">
+		<view class="box-cont" bindtap="{{tapEvent}}">
+			<icon class="icon search"/>
+			<view class="input" wx:if="{{!showInput}}">搜索多点超市商品</view>
+			<input class="input" wx:else auto-focus="{{autoFocus}}" placeholder="搜索多点超市商品" bindblur="{{blurEvent}}"/>
+		</view>
+	</view>
+</template>

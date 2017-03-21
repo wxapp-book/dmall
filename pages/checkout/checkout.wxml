@@ -1,0 +1,59 @@
+<view class="base-style checkout">
+	<view class="address">
+		<text class="user">李骏 13480113759</text>
+		<text class="location">送至：清华同方科技大厦 b座8楼</text>
+	</view>
+
+	<view class="shipment module">
+		<view class="row" wx:for="{{shipment.type}}" wx:if="{{item.selected}}">
+			配送方式
+			<view bindtap="changeShipment" class="sub-info">{{item.text}}</view>
+		</view>
+		<view class="row" wx:for="{{shipment.time}}" wx:if="{{item.selected}}">
+			配送时间
+			<view bindtap="changeTime" class="sub-info">{{item.text}}</view>
+		</view>
+	</view>
+
+	<view class="payment module">
+		<view bindtap="changePayment" data-payment-index="{{index}}" class="row" wx:for="{{payment}}">
+			<icon class="icon {{item.iconClass}}"/>
+			{{item.text}}
+			<icon class="icon checkbox {{item.selected ? 'checked' : ''}}"/>
+		</view>
+	</view>
+
+
+	<view class="remarks module">
+		<view class="row">
+			备注
+			<input bindblur="saveRemarks" placeholder="填写安全存放地址，请按门铃等配送相关要求" value="{{remarks.text}}"/>
+		</view>
+	</view>
+
+	<view class="orderinfo module">
+		<view class="row">订单价格</view>
+		<view class="cont">
+			<view class="sub-row" wx:for="{{orderInfo.list}}">
+				{{item.name}}
+				<view>{{item.price}}</view>
+			</view>
+		</view>
+		<view class="row total">实际支付 <view>{{orderInfo.all}}</view></view>
+	</view>
+
+	<view class="products module">
+		<view class="row">商品清单</view>
+		<view class="cont">
+			<view class="sub-row" wx:for="{{products}}">
+				{{item.name}} * {{item.num}}
+				<view>{{item.price}}</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="toolbar">
+		合计 <view class="strong"><view class="sup">¥</view>{{totalPrice}}</view>
+		<view bindtap="submit" class="button">提交订单</view>
+	</view>
+</view>

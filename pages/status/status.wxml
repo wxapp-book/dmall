@@ -1,0 +1,13 @@
+<view class="base-style status">
+	<view class="header">
+		<image src="http://static.dmall.com/kayak-project/cashier/dist/cashier/common/image/icon-weixinpay-sucess.png"></image>
+		<view class="info">支付成功</view>
+		<view class="subinfo">多点君会尽快安排发货，请耐心等待哟</view>
+		<view class="arc"></view>
+	</view>
+
+	<view class="act">
+		<view class="button" bindtap="back">回到首页</view>
+		<view class="button primary" bindtap="goOrderList">查看订单</view>
+	</view>
+</view>

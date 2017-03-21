@@ -1,0 +1,41 @@
+<view class="details base-style">
+	<view class="slider">
+		<swiper autoplay bindchange="bannerChange">
+			<swiper-item wx:for="{{banner}}">
+				<image src="{{item.img}}"></image>
+			</swiper-item>
+		</swiper>
+		<view class="pagination">
+			<view wx:for="{{banner}}" class="{{item.selected ? 'current' : ''}}"></view>
+		</view>
+	</view>
+
+	<view class="info">
+		<view class="title mod">{{title}}</view>
+		<view class="subinfo mod">{{info}}</view>
+		<view class="price mod">¥<view class="strong">{{price}}</view></view>
+	</view>
+
+	<view class="spec info-module">
+		<view class="title">参数规格</view>
+		<view class="table">
+			<block wx:for="{{params}}">
+				<view class="cell"><view>{{item.name}}</view></view>
+				<view class="cell"><view>{{item.value}}</view></view>
+			</block>
+		</view>
+	</view>
+
+	<view class="more info-module">
+		<view class="title">商品介绍</view>
+		<image wx:for="{{images}}" style="width:750rpx;height:{{750/item.width*item.height}}rpx" src="{{item.img}}"></image>
+	</view>
+
+	<view class="toolbar">
+		<view class="cart-area">
+			<view class="num">{{cartNum}}</view>
+			<icon class="icon cart"/>
+		</view>
+		<view class="button" bindtap="addCart" data-sku-id="{{skuId}}" data-store-id="{{storeId}}">加入购物车</view>
+	</view>
+</view>

@@ -1,0 +1,24 @@
+<view class="base-style cashier">
+	<view class="tips">		
+		{{tips}}
+	</view>
+
+	<view class="orderinfo module">
+		<view class="row" wx:for="{{orderInfo}}">{{item.text}}</view>
+	</view>
+
+	<view class="payment">
+		<view class="title">还需要支付：<view class="price">{{price}}元</view></view>
+
+		<view class="row" wx:for="{{payment}}" data-payment-index="{{index}}" bindtap="changePayment">
+			<icon class="icon {{item.iconClass}} left"/>
+			<view>{{item.name}}</view>
+			<view class="info">{{item.info}}</view>
+			<icon class="icon checkbox {{item.selected ? 'checked' : ''}} right"/>
+		</view>
+	</view>
+
+	<view class="act">
+		<view bindtap="pay" class="button">确认支付</view>
+	</view>
+</view>

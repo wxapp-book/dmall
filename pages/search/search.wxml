@@ -1,0 +1,9 @@
+<import src="../../widgets/searchbox/searchbox.wxml"/>
+<import src="../../widgets/itemlist/itemlist.wxml"/>
+
+<view class="base-style search">
+	<template is="search-box" data="{{...searchBox}}"></template>
+	<view class="cont">
+		<template is="itemlist" data="{{...itemList}}"></template>
+	</view>
+</view>

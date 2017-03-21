@@ -1,0 +1,10 @@
+<import src="../modules/modules.wxml"/>
+
+<template name="home">
+	<view class="view-home modules">
+		<block wx:for="{{modules}}">
+			<template is="{{item.type}}" data="{{...item, index}}"></template>
+		</block>		
+	</view>	
+</template>
+

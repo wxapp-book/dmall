@@ -1,0 +1,15 @@
+.view-mine { background-color: #f6f6f6; }
+.view-mine .head { padding : 30rpx 20rpx 0 20rpx; display: flex; height : 200rpx; background: url(http://static.dmall.com/kayak-project/usercenter/dist/usercenter/common/image/minetop.png) 0 -80rpx no-repeat #fff; background-size : 100%; }
+.view-mine .head .photo { width : 120rpx; height : 120rpx; border-radius : 50%; border :2px solid rgba(255,255,255,0.4); }
+.view-mine .head .userinfo { color : #fff; }
+.view-mine .head .userinfo .nick { padding : 0 20rpx; margin-top : 25rpx; font-size : 32rpx; }
+.view-mine .head .userinfo .phone { margin-top: 10rpx; font-size : 28rpx; padding: 0 20rpx; }
+.view-mine .head .userinfo .vip { font-size : 24rpx; padding-left: 30rpx; }
+
+.view-mine .sub-info { display: flex; padding : 20rpx 0; border-bottom : solid 1px #f0f0f0; overflow: hidden; background-color: #fff; }
+.view-mine .sub-info .mod { flex-grow : 1; border-right : solid 1px #f0f0f0; text-align: center; position: relative; right : -1px; font-size : 24rpx; color : gray; }
+.view-mine .sub-info .mod view { font-size : 32rpx; color : #404040; margin-bottom : 0rpx; }
+
+.view-mine .entries { margin-top : 20rpx; background-color: #fff; border-bottom : solid 1px #eee; }
+.view-mine .entries .entry { border-top: solid 1px #eee; font-size : 28rpx; color : gray; height : 60rpx; line-height: 60rpx; padding : 10rpx 20rpx; }
+.view-mine .entries .entry .icon { float: left; margin-right : 10rpx; }

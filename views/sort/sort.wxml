@@ -1,0 +1,16 @@
+<import src="../../widgets/searchbox/searchbox.wxml"/>
+<import src="../../widgets/itemlist/itemlist.wxml"/>
+
+<template name="sort">
+	<view class="view-sort" bindtap="sortClickProxy">
+		<template is="search-box" data="{{...searchBox}}"></template>
+		<view class="cont" style="height : 1400rpx;">
+			<scroll-view scroll-y class="list">
+				<view bindtap="sortChangeSort" data-sort-index="{{index}}" wx:for="{{sortList}}" class="{{ item.selected ? 'current' : '' }}">{{item.text}}</view>
+			</scroll-view>
+			<view class="result">
+				<template is="itemlist" data="{{...itemList}}"></template>
+			</view>
+		</view>
+	</view>
+</template>

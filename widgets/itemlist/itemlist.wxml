@@ -1,0 +1,12 @@
+<template name="itemlist">
+	<view class="itemlist" wx:if="{{list}}">
+		<view class="item" wx:for="{{list}}">
+			<navigator url="../details/details?sku={{item.skuId}}">
+				<image src="{{item.img}}"></image>
+				<view class="title">{{item.title}}</view>
+				<view class="price">¥<view class="strong">{{item.price}}</view></view>
+			</navigator>
+			<icon wx:if="{{showAddCart}}" data-event="addCart" data-store-id="{{item.storeId}}" data-sku-id="{{item.skuId}}" class="icon plus"/>
+		</view>
+	</view>
+</template>

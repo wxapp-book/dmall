@@ -1,0 +1,36 @@
+.modules { width : 100%; overflow: hidden; padding-bottom: 100rpx; }
+.modules .header { position: fixed; top : 0; left : 0; width : 100%; z-index : 1; background-color: #fff; }
+.modules .header .tab { display: flex; border-bottom: solid 1px #eee; }
+.modules .header .tab view { color : #404040; flex-grow : 1; text-align: center; height : 80rpx; font-size: 28rpx; line-height: 80rpx; }
+.modules .header .tab view.current { color : #f5692e; }
+
+.modules .entry { display: flex; width : 100%; }
+.modules .entry view { padding : 10rpx; flex-grow : 1; text-align: center; font-size : 24rpx; color : #888; }
+.modules .entry view image { height : 80rpx; width : 120rpx; display: block; margin : 0 auto; margin-bottom : 10rpx; }
+
+.modules .banner image{ width : 100%; height : 240rpx; }
+
+/* 九宫格 */
+.modules .module-1 { display: flex; flex-wrap: wrap; border-top : solid 1px #ccc; }
+.modules .module-1 .flex-col .col { width : 250rpx; }
+.modules .module-1 .item{ position: relative; left : 1px; padding : 14rpx; border-right : solid 1px #eee; border-bottom : solid 1px #eee; }
+.modules .module-1 .item .image { width : 210rpx; height : 210rpx; }
+.modules .module-1 .item .title { display : -webkit-box; width : 210rpx; height : 60rpx; line-height: 30rpx; font-size : 26rpx; overflow: hidden; color : #404040; margin-top : 10rpx; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.modules .module-1 .item .price { margin-top : 10rpx; }
+.modules .module-1 .item .price .last { display: inline-block; height : 28rpx; line-height: 28rpx; overflow : hidden; color : #999; font-size : 24rpx; position: relative; }
+.modules .module-1 .item .price .last view { width : 100%; border-bottom: solid 1px; position: absolute;top : 14rpx; }
+.modules .module-1 .item .price .current { font-size : 26rpx; height: 28rpx; line-height: 28rpx; font-weight : bold; color : #f5692e; }
+.modules .module-1 .item .add-cart { position: absolute; right : 14rpx; bottom : 5rpx; }
+
+.modules .module-2 { margin-bottom : 10px; height : 440rpx; }
+.modules .module-2 .row { height : 220rpx; }
+.modules .module-2 image,
+.modules .module-2 navigator { display: block; width : auto; height : 100%; }
+.modules .module-2 navigator { border-bottom : solid 1px #eee; border-right : solid 1px #eee; border-top : solid 1px #eee; }
+
+.modules .module-3 image,
+.modules .module-3 navigator { width : 100%; height : 100%; }
+
+.modules .module-4 { height : 300rpx; }
+.modules .module-4 image,
+.modules .module-4 navigator { width : 100%; height : 100%; }

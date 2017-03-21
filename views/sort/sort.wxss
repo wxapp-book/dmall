@@ -1,0 +1,12 @@
+@import "../../widgets/searchbox/searchbox.wxss";
+@import "../../widgets/itemlist/itemlist.wxss";
+
+.view-sort { color : #404040; background-color: #f6f6f6; }
+
+.view-sort .cont { display: flex; margin-top : 110rpx; }
+.view-sort .cont .list { height : 100%; width : 200rpx; background-color: #f1f1f1; }
+.view-sort .cont .list view { letter-spacing : 2rpx; text-align: center; padding : 20rpx 0; font-size: 28rpx; }
+.view-sort .cont .list view.current { background-color: #fff; color : #f5692e; }
+
+.view-sort .cont .result { width : 550rpx; background-color: #fff; }
+

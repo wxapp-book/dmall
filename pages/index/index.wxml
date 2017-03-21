@@ -1,0 +1,17 @@
+<import src="../../views/home/home.wxml"/>
+<import src="../../views/sort/sort.wxml"/>
+<import src="../../views/cart/cart.wxml"/>
+<import src="../../views/mine/mine.wxml"/>
+
+
+<view class="base-style content">
+	<template is="{{currentView}}" data="{{ ...currentData }}"></template>
+</view>
+
+<view class="base-style toolbar">
+	<view wx:for="{{tabs}}" data-view="{{item.view}}" bindtap="changeTab" class="tab {{ item.view == currentView ? 'current' : ''}}">
+		<view class="icon bar {{item.className}} {{ item.view == currentView ? 'current' : ''}}"></view>
+		<view class="num" wx:if="{{item.className == 'cart'}}">{{cart.num}}</view>
+		{{item.text}}
+	</view>
+</view>

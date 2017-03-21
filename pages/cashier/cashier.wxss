@@ -1,0 +1,18 @@
+.cashier { background-color: #f9f9f9; font-size : 28rpx; }
+
+.cashier .tips { color : #f5692e; font-size : 24rpx; padding : 20rpx 30rpx; }
+
+.cashier .orderinfo  { background-color: #fff; border : solid 1px #eee; border-width : 1px 0; padding : 20rpx 0; }
+.cashier .orderinfo .row { padding : 10rpx 20rpx; }
+
+.cashier .payment { margin-top : 20rpx; background-color: #fff; border : solid 1px #eee; border-width : 1px 0; }
+.cashier .payment .title { padding : 20rpx; }
+.cashier .payment .title .price { display: inline;color : #f5692e; }
+.cashier .payment .row { padding : 20rpx 100rpx 20rpx 100rpx; position: relative; }
+.cashier .payment .row .info { font-size: 24rpx; margin-top : 10rpx; }
+.cashier .payment .row .icon { position: absolute;  top : 50%; margin-top : -30rpx; }
+.cashier .payment .row .icon.left { left : 20rpx; }
+.cashier .payment .row .icon.right { right : 20rpx; } 
+
+.cashier .act { position: fixed; bottom : 0; left : 0; width : 690rpx; padding : 20rpx 30rpx; }
+.cashier .act .button { background-color: #ff712b; color : #fff; text-align: center; height : 80rpx; line-height: 80rpx; border-radius : 6rpx; }

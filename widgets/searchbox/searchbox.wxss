@@ -1,0 +1,5 @@
+.search-box { padding : 20rpx 0; border-bottom: solid 1px #eee; position: fixed; top : 0; left : 0; width : 100%; background-color: #fff; z-index : 1; }
+.search-box .box-cont {  position: relative; background-color: #f1f1f1; height : 60rpx; padding : 5rpx; border-radius : 35rpx; margin : 0 20rpx; }
+.search-box .box-cont .search { position: absolute; left : 10rpx; }
+.search-box .box-cont .input { padding-left : 70rpx; font-size : 28rpx; line-height: 60rpx; display: block; height : 60rpx; }
+.search-box .box-cont view.input { color : gray; }

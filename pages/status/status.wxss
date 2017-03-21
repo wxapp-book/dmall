@@ -1,0 +1,11 @@
+.status { font-size : 28rpx; }
+
+.status .header { background-color: #f6f6f6; padding : 100rpx 20rpx 20rpx; text-align: center; color : gray; position: relative; }
+.status .header image { width : 400rpx; height : 200rpx; margin: 0 auto; display: block; z-index : 2; position: relative; }
+.status .header .info { font-size : 32rpx; margin-top: 40rpx; z-index: 2; position: relative; }
+.status .header .subinfo { font-size : 24rpx; margin-top : 20rpx; z-index: 2; position: relative; }
+.status .header .arc { width : 140%; height : 200rpx; border-radius: 0 0 200% 200%; background-color: #f6f6f6; position: absolute; left : -20%; bottom : -40rpx; }
+
+.status .act { margin-top : 100rpx; text-align: center; }
+.status .act .button { padding : 20rpx 30rpx; border : 1px solid #ff712b; display: inline-block; border-radius : 6rpx; color : #ff712b; margin : 0 20rpx; }
+.status .act .button.primary { color : #fff; background-color: #ff712b; }

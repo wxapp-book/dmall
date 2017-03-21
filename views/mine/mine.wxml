@@ -1,0 +1,71 @@
+<template name="mine">
+	<view class="view-mine">
+		<view class="head">
+			<image class="photo" src="http://wx.qlogo.cn/mmopen/GoBeTIlzV1sEc11NcS26NEHGrTu2pNEiaw7luvZHR0BB20doeK5Lc4039ATJiboH0bkZeVImWok3hcB826S4mlSKQW0VK97qL1/0"></image>
+			<view class="userinfo">
+				<view class="nick">
+					李骏
+					<view class="icon vip">
+						V0会员
+					</view>
+				</view>
+				<view class="phone">134XXXX3759</view>
+			</view>
+		</view>
+		<view class="sub-info">
+			<view class="mod">
+				<view>0.00</view>
+				余额
+			</view>
+			<view class="mod">
+				<view>0</view>
+				卡包
+			</view>
+			<view class="mod">
+				<view>0</view>
+				优惠券
+			</view>
+		</view>
+
+		<view class="entries">
+			<view class="entry">
+				<icon class="icon orders"/>
+				全部订单
+			</view>
+			<view class="entry">
+				<icon class="icon group-buying"/>
+				拼团订单
+			</view>
+			<view class="entry">
+				<icon class="icon scan"/>
+				扫码订单
+			</view>
+		</view>
+
+		<view class="entries">
+			<view class="entry">
+				<icon class="icon member"/>
+				会员中心
+			</view>
+			<view class="entry">
+				<icon class="icon location"/>
+				收货地址
+			</view>
+			<view class="entry">
+				<icon class="icon help"/>
+				帮助中心
+			</view>
+			<view class="entry">
+				<icon class="icon download"/>
+				体验APP
+			</view>
+		</view>
+
+		<view class="entries">
+			<view class="entry" bindtap="mineCallPhone" data-phone="10100818">
+				<icon class="icon service"/>
+				客服电话 1010-0818
+			</view>
+		</view>		
+	</view>
+</template>

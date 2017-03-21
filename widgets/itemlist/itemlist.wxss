@@ -1,0 +1,8 @@
+/* 商品列表 */
+.itemlist { overflow: hidden;}
+.itemlist .item { border-bottom: solid 1px #eee; height : 130rpx; padding: 20rpx 20rpx 20rpx 160rpx; position: relative; }
+.itemlist .item image { width : 130rpx; height : 130rpx; position: absolute; left : 10rpx; top : 50%; margin-top: -65rpx; }
+.itemlist .item .title { font-size: 28rpx; height : 60rpx; line-height: 30rpx; overflow: hidden; }
+.itemlist .item .price { font-size : 24rpx; color : #f5692e; position: absolute; bottom : 10rpx;  }
+.itemlist .item .price .strong { display: inline; font-size : 36rpx; margin-left : 5rpx; }
+.itemlist .item .icon.plus { position: absolute; right : 20rpx; bottom : 10rpx; }
