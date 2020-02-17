@@ -1,5 +1,0 @@
-@import "../../widgets/searchbox/searchbox.wxss";
-@import "../../widgets/itemlist/itemlist.wxss";
-
-.search {}
-.search .cont { margin-top : 110rpx; }
